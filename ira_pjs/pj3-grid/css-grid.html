@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Grod</title>
+    <style media="screen">
+      *{
+      padding:0; margin: 0;
+      }
+      .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+      }
+      .wrapper > div{
+        padding: 1em;
+        background-color: rgb(251, 199, 156);
+      }
+      .wrapper > div.light{
+        padding: 1em;
+        background-color: rgb(196, 198, 136);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+
+      <div class="light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quod vel ex quis velit voluptatibus libero eius odio, itaque et ratione.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+      <div class="light">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </div>
+    </div>
+  </body>
+</html>
