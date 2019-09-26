@@ -1,0 +1,12 @@
+body{
+background-color: rgb(109, 218, 34);
+background: url(https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_960_720.jpg);
+text-align: justify;
+}
+.c1{
+  font-size: 71px;
+}
+.wrapper{
+  display: flex;
+  grid-template-columns: 10px 20px;
+}

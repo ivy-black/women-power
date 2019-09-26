@@ -1,0 +1,114 @@
+html{
+  background-image: url("C:/Users/ibelenkaya/github/women-power/ira_pjs/pj4_planets-task/images/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  resize: both;
+}
+.headers{
+  text-align: center;
+  text-decoration:none;
+  text-shadow: 2px 3px 3px rgb(105, 102, 235);
+  color: rgb(17, 27, 168);
+  font-size: 120px;
+  font-family:sans-serif;
+}
+.paragraph{
+  font-size: 90px;
+}
+.plan-info{
+  color: rgb(134, 228, 225);
+  font-size: 40px;
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100em;
+}
+
+a.links{
+  font-size: 50px;
+  font-weight: bolder;
+  font-family: Stencil Std, fantasy;
+  letter-spacing: 5px;
+
+}
+/*.nav-bar{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+width: 100%;
+position: relative;
+margin: 10px auto;
+}*/
+ul{
+display: inline-block;
+width: 100%;
+align-items: center;
+text-align: center;
+  list-style-type: none;
+  margin: 0;
+ padding: 0;
+ overflow: hidden;
+background-color: rgba(22, 15, 42, 0.85);
+
+}
+li{
+  display:inline-block;
+    align-items: center;
+    text-align: center;
+ float:none;
+width: 47%;
+  /*grid-auto-rows: 150px;*/
+
+margin: auto auto;
+padding: 10px 10px;
+
+}
+a{
+  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+
+}
+
+li:hover{
+  background-color: #240734;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(196, 16, 233); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
