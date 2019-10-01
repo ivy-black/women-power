@@ -9,7 +9,7 @@
       }
       .wrapper{
         display: grid;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: repeat(3,1fr);
         grid-column-gap: 1em;
         grid-row-gap: 0.5em;
       }
@@ -21,6 +21,16 @@
         padding: 1em;
         background-color: rgb(196, 198, 136);
       }
+      .included{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1em;
+        grid-auto-rows: 80px;
+
+      }
+      .included > div{
+        background-color: rgb(71, 52, 187);
+      }
     </style>
   </head>
   <body>
@@ -30,10 +40,14 @@
       </div>
 
       <div class="light">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quod vel ex quis velit voluptatibus libero eius odio, itaque et ratione. Possimus sed, numquam est dolor quos repudiandae?
-      </div>
-      <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate tempore sequi, odit doloremque voluptate numquam, obcaecati pariatur quia, expedita reprehenderit id, fuga labore magni. Earum necessitatibus aliquam sit modi est nobis maxime esse laudantium delectus, tenetur, adipisci ut architecto, quod libero recusandae temporibus deleniti distinctio aspernatur pariatur voluptatum enim molestias. Alias non fugiat quo porro perspiciatis, nam expedita dolorum excepturi vero. Exercitationem eum voluptate repellat atque? Voluptatibus ipsam voluptatem, commodi.
+
+      </div>
+      <div class="included">
+        <div>Lorem ipsum.</div>
+        <div>Lorem ipsum.</div>
+        <div>Lorem ipsum.</div>
+        <div>Lorem ipsum.</div>
       </div>
       <div class="light">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quod vel ex quis velit voluptatibus libero eius odio, itaque et ratione. Possimus sed, numquam est dolor quos repudiandae?
