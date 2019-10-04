@@ -1,0 +1,48 @@
+@import url("C:/Users/ibelenkaya/github/women-power/node_modules/octicons/index.scss");
+@import "nullstyle.scss";
+.octicon{
+  display:inline-block;
+  vertical-align:text-top;
+  fill:black;
+}
+$fx:80px;
+$color_1:#531771;
+$color_2:rgb(222, 125, 24);
+
+.block{
+  font-size: 20px;
+  line-height:20px;
+  margin: 30px;
+   span{
+     color:green;
+   }
+   h1,.block-in-block{
+     color:$color_2;
+   }
+   >p{
+     color: red;
+   }
+
+&.block-big{
+  font-weight: bolder;
+  font-style: italic;
+}
+}
+.link{
+  color:pink;
+  font-size: $fx;
+  &:hover{
+    text-decoration: none;
+    color:rgb(186, 252, 211);
+  }
+  &:active{
+   color: purple;
+  }
+  &:focus{
+    color: green;
+
+  }
+  .block &{
+    font-size: 100px;
+  }
+}
