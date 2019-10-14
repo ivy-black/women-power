@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+@font-face {
+	font-family: 'Bebas';
+	src: url('../fonts/BebasNeue-Regular.eot');
+	src: local('☺'), url('../fonts/BebasNeue-Regular.woff') format('woff'), url('../fonts/BebasNeue-Regular.ttf') format('truetype'), url('../fonts/BebasNeue-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AkzidenzGroteskBold';
+	src: url('../fonts/BertholdAkzidenzGroteskBoldCondensed.eot');
+	src: local('☺'), url('../fonts/BertholdAkzidenzGroteskBoldCondensed.woff') format('woff'), url('../fonts/BertholdAkzidenzGroteskBoldCondensed.ttf') format('truetype'), url('../fonts/BertholdAkzidenzGroteskBoldCondensed.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+//Шрифт по-умолчанию
+$fontfamily:"PT Sans";
