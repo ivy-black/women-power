@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="format-detection" content="telephone-no">
+    <meta http-equiv="X-UA-Compstible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    user-scalable=0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>IvyBlack</title>
+  </head>
+  <body>
+    <div class="fixed-top-pic">
+    <img id="logo" src="img/IvyBlack_thumbnail.png" alt="personal-logo"/>
+    </div>
+    <div class="wrapper">
+      <!--@import "header.html"-->
+      <!--@import "main.html"-->
+      <!--@import "footer.html"-->
+    </div>
+    <script defer type="text/javascript">
+//  $( ".nav-container" ).hover(function() {
+  //$( ".navbar" ).toggle("slide",{direction:"left"});  });
+//  $( document ).ready(function() {
+//  var hovering = function(){
+  //  $(".navbar").show("slide", { direction: "left" }, 100000);  };
+
+  //var leaving = function(){
+  //  $(".navbar").hide("slide", { direction: "right" }, 100000);  };
+
+//  $(".nav-container").hover(hovering, leaving); });
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+ showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ if (n > slides.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = slides.length}
+ for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+ }
+ for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+}
+    </script>
+  </body>
+</html>
