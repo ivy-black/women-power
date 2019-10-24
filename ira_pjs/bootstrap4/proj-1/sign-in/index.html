@@ -1,10 +1,5 @@
-<!-- ---
-layout: examples
-title: Signin Template
-extra_css: 'signin.css'
-body_class: 'text-center'
-include_js: false
---- -->
+<!-- --- layout: examples title: Signin Template extra_css: 'signin.css' body_class:
+'text-center' include_js: false date: 2016-03-23T10:20:00Z --- -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +18,7 @@ include_js: false
     <title>Document</title>
   </head>
   <body>
-    <form class="form-signin">
+    <form class="form-signin" id="signin">
       <img
         class="mb-4"
         src="bootstrap-solid.svg"
@@ -57,9 +52,12 @@ include_js: false
       <button class="btn btn-lg btn-primary btn-block" type="submit">
         Sign in
       </button>
-      <p class="mt-5 mb-3 text-muted">
-        &copy; 2017-{{ site.time | date: '%Y' }}
-      </p>
+
+      <p class="mt-5 mb-3 text-muted" id="demo"></p>
+      <script>
+        var d = new Date();
+        document.getElementById('demo').innerHTML = '&copy' + d;
+      </script>
     </form>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

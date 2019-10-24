@@ -1,0 +1,333 @@
+---
+layout: examples
+title: Carousel Template
+extra_css: 'carousel.css'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="carousel.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="top">
+      <!-- NAVIGATION BAR -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Carousel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <!--------------------------------------------------------->
+    <!-- SCROLLING PICTURES-->
+    <main role="main">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/spinpic-trad1.png" height="100%" alt="" />
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>The Future of Money</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#signup" role="button"
+                    >Sign up today</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/spinpic-trad2.jpg" height="100%" alt="" />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#info" role="button"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/spinpic-trad3.jpg" height="100%" alt="" />
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-primary" href="#" role="button"
+                    >Browse gallery</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- Marketing messaging and featurettes
+  ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing" id="info">
+        <div class="title">About Us</div>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-10">
+            <img
+              src="img/placeholder.svg"
+              width="340"
+              height="140"
+              background="#777"
+              color="#777"
+              class="rounded-circle"
+              alt=""
+            />
+            <h2>The Future of Money</h2>
+            <p>
+              Crypto Park is maintained by a team of experienced traders
+              experienced in both forex and cryptocurrencies. With over
+              2,3,00,000 active members across 28 countries. Starting out as a
+              beginner in the world of crypto trading can be overwhelming with
+              no experience to draw upon and vast amounts of conflicting
+              information out there, finding your feet is far from easy. That’s
+              why we’ve been working for over three years to craft Crypto Park
+              to revolutionize the cryptocurrency trading process and make
+              things easier for novice traders. With our user-friendly trading
+              system, we’ve made everything as simple as it should be, allowing
+              you to purchase currencies with ease.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-5 -->
+          <div class="col-lg-5">
+            {% include icons/placeholder.svg width="140" height="140"
+            background="#777" color="#777" class="rounded-circle" %}
+            <h2>Start Trading</h2>
+            <p>
+              Start auto trading and manual trading with various platforms and
+              let the software trade for you! Crypto Park analyzes crypto and
+              forex market 24/7 and uses technical indicators to Buy and Sell
+              cryptos like Bitcoin, Ethereum, Ripple and many more.
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-5 -->
+          <div class="col-lg-5">
+            {% include icons/placeholder.svg width="140" height="140"
+            background="#777" color="#777" class="rounded-circle" %}
+            <h2>Why Us?</h2>
+            <p>
+              Crypto Park is based on an artificial intelligence algorithm. It
+              analyzes all crypto markets (such as Bitcoin and Ethereum) and
+              foreign exchange markets, 24/7. Crypto Park analyzes thousands of
+              pieces of data per second. Crypto Park is linked via computer to
+              multiple platforms, which allows it to trade efficiently.The
+              software is able to place a purchase order efficiently. Crypto
+              Park is one of the fastest and most efficient software options on
+              the market
+            </p>
+            <p>
+              <a class="btn btn-secondary" href="#" role="button"
+                >View details &raquo;</a
+              >
+            </p>
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              First featurette heading.
+              <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            {% include icons/placeholder.svg width="500" height="500"
+            background="#eee" color="#aaa" class="bd-placeholder-img-lg
+            featurette-image img-fluid mx-auto" %}
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">
+              Oh yeah, it’s that good.
+              <span class="text-muted">See for yourself.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            {% include icons/placeholder.svg width="500" height="500"
+            background="#eee" color="#aaa" class="bd-placeholder-img-lg
+            featurette-image img-fluid mx-auto" %}
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">
+              And lastly, this one. <span class="text-muted">Checkmate.</span>
+            </h2>
+            <p class="lead">
+              Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id
+              ligula porta felis euismod semper. Praesent commodo cursus magna,
+              vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+              commodo.
+            </p>
+          </div>
+          <div class="col-md-5">
+            {% include icons/placeholder.svg width="500" height="500"
+            background="#eee" color="#aaa" class="bd-placeholder-img-lg
+            featurette-image img-fluid mx-auto" %}
+          </div>
+        </div>
+
+        <hr class="featurette-divider" />
+
+        <!-- /END THE FEATURETTES -->
+      </div>
+      <!-- /.container -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p class="mt-5 mb-3 text-muted" id="demo"></p>
+        <script>
+          var d = new Date();
+          document.getElementById('demo').innerHTML = '&copy' + d;
+        </script>
+      </footer>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
