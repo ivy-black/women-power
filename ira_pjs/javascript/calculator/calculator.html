@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="calculator.js"></script>
+    <style>
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,95px);
+        
+        /* grid-auto-columns: 1fr; */
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="one" class="num" value="one" onclick="calc()">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>+</button>
+        <button>-</button>
+        <button>*</button>
+        <button>/</button>
+        <button>=</button>
+        <textarea name="" id="result">result</textarea>
+    </div>
+</body>
+</html>
