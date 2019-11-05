@@ -13,20 +13,31 @@
         //    if(answer)window.location='http://google.com';
         // }
         //    setTimeout(moveon,6000);
-           function debug(msg) {
-               var log= document.getElementById("debuglog");
-               if(!log){
-                   log=document.createElement("div");
-                   log.id='debuglog';
-                   log.innerHTML= "<h1>Debug Log</h1>";
-                   document.body.appendChild(log);
-               }
-               var pre= document.createElement("pre");
-               var text= document.createTextNode(msg);
-               pre.appendChild(text);
-               log.appendChild(pre);
-           }
+        //    function debug(msg) {
+        //        var log= document.getElementById("debuglog");
+        //        if(!log){
+        //            log=document.createElement("div");
+        //            log.id='debuglog';
+        //            log.innerHTML= "<h1>Debug Log</h1>";
+        //            document.body.appendChild(log);
+        //        }
+        //        var pre= document.createElement("pre");
+        //        var text= document.createTextNode(msg);
+        //        pre.appendChild(text);
+        //        log.appendChild(pre);
+
+        //    }
+        function sayHi() {
+                let phrase = "Привет"; // локальная переменная, "var" вместо "let"
+
+                alert(phrase); // Привет
+            }
+
+            sayHi();
+
+            alert(phrase);
     </script>
-    <button onclick="debug('hide button 1')">Hide</button>
+    <!-- <button onclick="debug('hide button 1')">Hide</button> -->
+    <button onclick="sayHI()">Say hi</button>
 </body>
 </html>

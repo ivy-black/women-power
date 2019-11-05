@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="month" cols="" rows=""></textarea>
+    <button onclick="getInput()" type="button" id="cl">Tap Here</button>
+    <p id="demo"></p>
+    <script>
+        'use strict';
+        window.onload=function(){
+        // var inp = document.getElementById('month').value;
+        var inp = document.getElementById('month');
+            //inp = inp.toLowerCase();
+             var cl=document.getElementById('cl');
+        cl.onclick=function getInput() {
+           var ind=inp.value;
+           
+            //document.getElementById("demo").innerHTML = inp;
+            // var months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'december'];
+            //  var cho = months.find(item==inp);
+            //  alert(cho);
+             if (ind ==('september'||'october'||'november')) {
+                 document.getElementById("demo").innerHTML = "This is FALL";
+                 alert('fall');
+             }
+             else if(inp == ('december' || 'january' || 'february')){
+                 document.getElementById("demo").innerHTML = "This is WINTER";
+             }
+             else if (inp == ('march' || 'april' || 'may')) {
+                 document.getElementById("demo").innerHTML = "This is SPRING";
+             }
+             else if (inp == ('june' || 'july' || 'august')) {
+                 document.getElementById("demo").innerHTML = "This is SUMMER";
+             }
+              else{
+                   document.getElementById("demo").innerHTML = "This is something else";
+             }
+
+           // var sum = ['june', 'july', 'august'];
+            // if (inp==sum.find) {
+            //      document.getElementById("demo").innerHTML = "This is SUMMER";
+            // }
+            
+        }
+        }
+       
+        //months.forEach()
+        </script>
+</body>
+</html>
