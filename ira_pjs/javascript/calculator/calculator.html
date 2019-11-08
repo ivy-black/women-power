@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="calculator.js"></script>
     <style>
     .wrapper{
@@ -17,8 +18,8 @@
 </head>
 <body>
     <div class="wrapper">
-        <button id="one" class="num" value="one" onclick="calc()">1</button>
-        <button>2</button>
+        <button id="one" class="num" value="1">1</button>
+        <button class="num" value="2">2</button>
         <button>3</button>
         <button>4</button>
         <button>5</button>
@@ -31,6 +32,7 @@
         <button>*</button>
         <button>/</button>
         <button>=</button>
+        <textarea name="" id="inpOut">0.</textarea>
         <textarea name="" id="result">result</textarea>
     </div>
 </body>
