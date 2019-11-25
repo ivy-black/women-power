@@ -16,10 +16,10 @@
       src="//unpkg.com/blob.js@1.0.1/Blob.js"
       type="text/javascript"
     ></script>
-    <script
+    <!-- <script
       src="https://unpkg.com/browse/xlsx@0.15.2/dist/shim.min.js"
       type="text/javascript"
-    ></script>
+    ></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
@@ -28,31 +28,42 @@
     <input id="file-object" type="file" />
     <table id="result"></table>
     <script>
+      // console.log(file);
       document
         .getElementById('file-object')
         .addEventListener('change', function(e) {
           var files = e.target.files,
             file;
-          if (!files || files.length == 0) return;
-          file = files[0];
+          // if (!files || files.length == 0) return;
+          // file = files[0];
           var fileReader = new FileReader();
           fileReader.onload = function(e) {
             var filename = file.name;
             // call 'xlsx' to read the file
             var binary = '';
             var bytes = new Uint8Array(e.target.result);
+            console.log(bytes);
             var length = bytes.byteLength;
             for (var i = 0; i < length; i++) {
               binary += String.fromCharCode(bytes[i]);
+              //return binary;
+              console.log(binary);
             }
-            var oFile = XLSX.read(binary, {
-              type: 'binary',
-              cellDates: true,
-              cellStyles: true
-            });
+            // var oFile = XLSX.read(binary, {
+            //   type: 'binary',
+            //   cellDates: true,
+            //   cellStyles: true
+            // });
+
+            // document.getElementById(
+            //   'result'
+            // ).innerHTML = fileReader.readAsArrayBuffer(binary);
+            console.log(binary);
+            document.getElementById('result').innerHTML = String.target.binary;
           };
-          fileReader.readAsArrayBuffer(file);
-          document.getElementById('result').innerHTML = file;
+          // fileReader.readAsArrayBuffer(file);
+          // console.log(String.file);
+          // document.getElementById('result').innerHTML = String.target.binary;
         });
     </script>
   </body>

@@ -149,11 +149,11 @@
             e.dataTransfer.dropEffect = 'copy';
           }
 
-          // if(drop.addEventListener) {
-          //   drop.addEventListener('dragenter', handleDragover, false);
-          //   drop.addEventListener('dragover', handleDragover, false);
-          //   drop.addEventListener('drop', handleDrop, false);
-          // }
+          if (drop.addEventListener) {
+            drop.addEventListener('dragenter', handleDragover, false);
+            drop.addEventListener('dragover', handleDragover, false);
+            drop.addEventListener('drop', handleDrop, false);
+          }
         });
     </script>
   </body>
