@@ -29,42 +29,42 @@
     <table id="result"></table>
     <script>
       // console.log(file);
-      document
-        .getElementById('file-object')
-        .addEventListener('change', function(e) {
-          var files = e.target.files,
-            file;
-          // if (!files || files.length == 0) return;
-          // file = files[0];
-          var fileReader = new FileReader();
-          fileReader.onload = function(e) {
-            var filename = file.name;
-            // call 'xlsx' to read the file
-            var binary = '';
-            var bytes = new Uint8Array(e.target.result);
-            console.log(bytes);
-            var length = bytes.byteLength;
-            for (var i = 0; i < length; i++) {
-              binary += String.fromCharCode(bytes[i]);
-              //return binary;
-              console.log(binary);
-            }
-            // var oFile = XLSX.read(binary, {
-            //   type: 'binary',
-            //   cellDates: true,
-            //   cellStyles: true
-            // });
-
-            // document.getElementById(
-            //   'result'
-            // ).innerHTML = fileReader.readAsArrayBuffer(binary);
+      document;
+      var target = document.getElementById('file-object');
+      target.addEventListener('change', function(e) {
+        var files = target.files,
+          file;
+        // if (!files || files.length == 0) return;
+        // file = files[0];
+        var fileReader = new FileReader();
+        fileReader.onload = function(e) {
+          var filename = files.name;
+          // call 'xlsx' to read the file
+          var binary = '';
+          var bytes = new Uint8Array(e.target.result);
+          console.log(bytes);
+          var length = bytes.byteLength;
+          for (var i = 0; i < length; i++) {
+            binary += String.fromCharCode(bytes[i]);
+            //return binary;
             console.log(binary);
-            document.getElementById('result').innerHTML = String.target.binary;
-          };
-          // fileReader.readAsArrayBuffer(file);
-          // console.log(String.file);
-          // document.getElementById('result').innerHTML = String.target.binary;
-        });
+          }
+          // var oFile = XLSX.read(binary, {
+          //   type: 'binary',
+          //   cellDates: true,
+          //   cellStyles: true
+          // });
+
+          // document.getElementById(
+          //   'result'
+          // ).innerHTML = fileReader.readAsArrayBuffer(binary);
+          console.log(binary);
+          document.getElementById('result').innerHTML = String.target.binary;
+        };
+        // fileReader.readAsArrayBuffer(file);
+        // console.log(String.file);
+        // document.getElementById('result').innerHTML = String.target.binary;
+      });
     </script>
   </body>
 </html>

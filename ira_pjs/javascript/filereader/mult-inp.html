@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" id="mult-input" multiple />
+    <script>
+      var control = document.getElementById('mult-input');
+      control.addEventListener(
+        'change',
+        function(event) {
+          (files = control.files), (len = files.length);
+          for (var i = 0; i < len; i++) {
+            console.log('name: ' + files[i].name);
+            console.log('name: ' + files[i].type);
+            console.log('name: ' + files[i].size + 'bytes');
+          }
+        },
+        false
+      );
+    </script>
+  </body>
+</html>

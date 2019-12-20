@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <input
+        name="eur"
+        id="eur"
+        value="EURO"
+        cols="30"
+        rows="1"
+        onchange="getCur(this.value, this.id)"
+      />
+
+      <br /><br />
+      <input
+        name="dol"
+        id="dol"
+        value="Dollar"
+        cols="30"
+        rows="1"
+        onclick="getCur(this.value, this.id)"
+      />
+      <br /><br />
+      <input
+        name="byr"
+        id="byr"
+        value="BYR"
+        cols="30"
+        rows="1"
+        onclick="getCur(this.value, this.id)"
+      />
+      <br />
+    </div>
+
+    <script>
+      //$(function() {
+      // 'use strict';
+      function getCur(val, clicked_id) {
+        // var cur = $('#clicked_id').html();
+        //  var cur = document.getElementById(clicked_id).id;
+        var selCur = val;
+        console.log(selCur);
+        console.log(clicked_id);
+        var elId = document.getElementById(clicked_id);
+        console.log(elId);
+        // $('#clicked_id')
+        //   .nextAll()
+        //   .html(selCur);
+        // document.getElementById(clicked_id).nextSibling.value = selCur * 4;
+        // $('input')
+        //   .not('#clicked_id')
+        //   .val(selCur);
+        $('input')
+          .not('#clicked_id')
+          .each()
+          .val(function(id, currentValue) {
+            switch (id) {
+              case 'dol':
+                return selCur * 3;
+                break;
+              case 'byr':
+                return selCur * 5;
+                break;
+              default:
+                'something got wrong';
+            }
+          });
+      }
+      function curChan(params) {}
+      //  });
+    </script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>
